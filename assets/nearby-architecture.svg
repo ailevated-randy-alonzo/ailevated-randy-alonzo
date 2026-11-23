@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="410" viewBox="0 0 1060 410" role="img" aria-labelledby="title desc">
+<title id="title">Nearby Nook architecture: isolating map providers</title>
+<desc id="desc">React and Leaflet frontend calls a same-origin Node API. The API validates requests and uses TTL caching and request coalescing before calling the Nominatim and Overpass providers. Timeout, rate-limit and failover behavior are handled within the server.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0C1F32"/><stop offset="1" stop-color="#123246"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L9 5L0 10Z" fill="#69D7E5"/></marker></defs>
+<rect width="1060" height="410" rx="18" fill="url(#bg)"/><path d="M0 0H1060" stroke="#75DCCA" stroke-width="6"/>
+<text x="38" y="61" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700" fill="#F5FCFF">Nearby Nook <tspan fill="#71DFC8">/</tspan> provider isolation</text>
+<text x="38" y="95" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#AEC6D7">Map providers are unreliable; the UI should not have to know why.</text>
+<g stroke-width="2.3"><rect x="35" y="141" width="252" height="121" rx="12" fill="#173D55" stroke="#538BA6"/>
+<rect x="382" y="141" width="274" height="121" rx="12" fill="#15515E" stroke="#68D1D8"/>
+<rect x="751" y="128" width="273" height="66" rx="11" fill="#173D55" stroke="#538BA6"/>
+<rect x="751" y="213" width="273" height="66" rx="11" fill="#173D55" stroke="#538BA6"/></g>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="57" y="181" fill="#83E5ED" font-size="19" font-weight="700">PRESENTATION</text>
+<text x="57" y="223" fill="#F7FCFF" font-size="28" font-weight="700">React + Leaflet</text>
+<text x="406" y="181" fill="#9BF3E3" font-size="19" font-weight="700">SAME-ORIGIN API</text>
+<text x="406" y="223" fill="#F7FCFF" font-size="28" font-weight="700">Node gateway</text>
+<text x="774" y="167" fill="#F7FCFF" font-size="24" font-weight="700">Nominatim</text>
+<text x="774" y="252" fill="#F7FCFF" font-size="24" font-weight="700">Overpass</text>
+<text x="38" y="330" fill="#E2F2FA" font-size="22" font-weight="700">At the gateway:</text>
+<text x="235" y="330" fill="#A4DAD9" font-size="21">validation  ·  cache  ·  coalescing  ·  timeout  ·  failover</text>
+</g>
+<g stroke="#69D7E5" stroke-width="3.5" fill="none" marker-end="url(#ar)">
+<path d="M290 200H374"/><path d="M662 180H742"/><path d="M662 226H742"/>
+</g>
+<path d="M38 357H1023" stroke="#6F96A7" stroke-opacity=".5"/>
+<text x="38" y="387" fill="#AFCBDC" font-size="18" font-family="Arial,Helvetica,sans-serif">Test seam: server/osmGateway.test.js  /  cache behavior: server/cache.test.js</text>
+</svg>

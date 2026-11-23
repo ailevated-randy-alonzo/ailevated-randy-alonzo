@@ -1,30 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="920" height="650" viewBox="0 0 920 650" role="img" aria-labelledby="at ad">
-<title id="at">Hyrvanta application architecture</title>
-<desc id="ad">Browser-based React frontend calls authenticated Worker API routes. Server checks ownership then connects to Cloudflare D1 metadata and private R2 resumes. Employer feeds pass through a separate protected server-side normalization workflow to D1.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="514" viewBox="0 0 1060 514" role="img" aria-labelledby="title desc">
+<title id="title">Hyrvanta verified implementation boundaries</title><desc id="desc">A React frontend calls authenticated Cloudflare Worker API routes. The server checks resource ownership and accesses Cloudflare D1 metadata and private R2 résumé objects. A separate Greenhouse and Lever synchronization process normalizes external job records into D1.</desc>
 <defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0C1D32"/><stop offset="1" stop-color="#122B42"/></linearGradient>
- <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#BCD7EB" stroke-opacity=".055"/></pattern>
- <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4.5 L0 9 Z" fill="#70D9E7"/></marker>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B1C31"/><stop offset="1" stop-color="#10283F"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L9 5L0 10Z" fill="#69D7E5"/></marker>
+<pattern id="gr" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#C0D8E8" stroke-opacity=".07"/></pattern>
 </defs>
-<rect width="920" height="650" rx="15" fill="url(#bg)"/><rect width="920" height="650" rx="15" fill="url(#grid)"/><path d="M0 0H920" stroke="#5DE0CE" stroke-width="6"/>
-<text x="42" y="58" fill="#F3FAFF" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="800">Hyrvanta · system boundaries</text>
-<text x="42" y="96" fill="#9EC1D4" font-family="Arial,Helvetica,sans-serif" font-size="22">Simplified from repository architecture and security docs</text>
-<rect x="78" y="133" width="764" height="93" rx="12" fill="#173D54" stroke="#4E95B0" stroke-width="2"/>
-<text x="108" y="172" fill="#77DEEC" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">01  CLIENT</text>
-<text x="108" y="206" fill="#F4FBFF" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700">React application · user workspace</text>
-<path d="M460 230V261" fill="none" stroke="#74DCE7" stroke-width="4" marker-end="url(#ar)"/>
-<rect x="78" y="272" width="764" height="100" rx="12" fill="#124B60" stroke="#62CEDF" stroke-width="2.5"/>
-<text x="108" y="312" fill="#A5F2E6" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">02  SERVER BOUNDARY</text>
-<text x="108" y="348" fill="#F4FBFF" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700">Worker API · authentication + owner checks</text>
-<path d="M263 376V419" fill="none" stroke="#74DCE7" stroke-width="4" marker-end="url(#ar)"/>
-<path d="M659 376V419" fill="none" stroke="#74DCE7" stroke-width="4" marker-end="url(#ar)"/>
-<rect x="78" y="431" width="365" height="97" rx="12" fill="#173D54" stroke="#4E95B0" stroke-width="2"/>
-<rect x="477" y="431" width="365" height="97" rx="12" fill="#173D54" stroke="#4E95B0" stroke-width="2"/>
-<text x="107" y="468" fill="#77DEEC" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">03A  STRUCTURED DATA</text>
-<text x="107" y="504" fill="#F4FBFF" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700">Cloudflare D1</text>
-<text x="506" y="468" fill="#77DEEC" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">03B  PRIVATE FILES</text>
-<text x="506" y="504" fill="#F4FBFF" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700">Cloudflare R2</text>
-<path d="M42 557H879" stroke="#67889F" stroke-opacity=".75" stroke-width="2"/>
-<text x="42" y="592" fill="#C1E2EA" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700">SEPARATE INGESTION PATH</text>
-<text x="42" y="624" fill="#A7C7D8" font-family="Arial,Helvetica,sans-serif" font-size="21">Greenhouse / Lever → validated sync adapters → D1 records</text>
+<rect width="1060" height="514" rx="18" fill="url(#bg)"/><rect width="1060" height="514" rx="18" fill="url(#gr)"/>
+<path d="M0 0H1060" stroke="#58DECE" stroke-width="6"/>
+<text x="42" y="58" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#F4FCFF" font-weight="700">Hyrvanta <tspan fill="#69DFD4">/</tspan> architecture at a glance</text>
+<text x="42" y="91" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#9DBACD">An implementation map, not a claim about production traffic</text>
+<g stroke-width="2.3">
+<rect x="42" y="132" width="232" height="119" rx="12" fill="#173C55" stroke="#4687A5"/>
+<rect x="361" y="132" width="299" height="119" rx="12" fill="#154E62" stroke="#62CFDF"/>
+<rect x="755" y="120" width="267" height="107" rx="12" fill="#173C55" stroke="#4687A5"/>
+<rect x="755" y="252" width="267" height="107" rx="12" fill="#173C55" stroke="#4687A5"/>
+<rect x="42" y="332" width="232" height="98" rx="12" fill="#173C55" stroke="#4687A5"/>
+<rect x="361" y="332" width="299" height="98" rx="12" fill="#154E62" stroke="#62CFDF"/>
+</g>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="64" y="169" fill="#6DD9E8" font-size="19" font-weight="700">BROWSER</text>
+<text x="64" y="211" fill="#F5FCFF" font-size="27" font-weight="700">React / Vinext</text>
+<text x="385" y="169" fill="#9EEDDE" font-size="19" font-weight="700">TRUST BOUNDARY</text>
+<text x="385" y="211" fill="#F5FCFF" font-size="27" font-weight="700">Authenticated API</text>
+<text x="385" y="236" fill="#C5E1EB" font-size="18">Resource ownership checks</text>
+<text x="777" y="154" fill="#6DD9E8" font-size="18" font-weight="700">STRUCTURED RECORDS</text>
+<text x="777" y="195" fill="#F5FCFF" font-size="27" font-weight="700">Cloudflare D1</text>
+<text x="777" y="286" fill="#6DD9E8" font-size="18" font-weight="700">PRIVATE DOCUMENTS</text>
+<text x="777" y="326" fill="#F5FCFF" font-size="27" font-weight="700">Cloudflare R2</text>
+<text x="64" y="368" fill="#6DD9E8" font-size="18" font-weight="700">EMPLOYER FEEDS</text>
+<text x="64" y="405" fill="#F5FCFF" font-size="23" font-weight="700">Greenhouse / Lever</text>
+<text x="385" y="368" fill="#9EEDDE" font-size="18" font-weight="700">SYNC ADAPTERS</text>
+<text x="385" y="405" fill="#F5FCFF" font-size="24" font-weight="700">Verify + normalize</text>
+</g>
+<g fill="none" stroke="#69D7E5" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ar)">
+<path d="M280 194H353"/>
+<path d="M663 174H747"/>
+<path d="M663 225H698V305H747"/>
+<path d="M280 378H353"/>
+<path d="M666 386H707V222H747"/>
+</g>
+<path d="M42 453H1020" stroke="#779BAE" stroke-opacity=".54"/>
+<text x="42" y="487" fill="#C0DBE8" font-family="Arial,Helvetica,sans-serif" font-size="20">Read the source: app/api/jobs · app/api/resumes · lib/job-sources</text>
 </svg>

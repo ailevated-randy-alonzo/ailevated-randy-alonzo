@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="395" viewBox="0 0 1400 395" role="img" aria-labelledby="t d">
+<title id="t">Randy M. Alonzo — engineering portfolio</title>
+<desc id="d">Navy editorial GitHub banner with a cyan accent and an index of four real software projects</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0A1224"/><stop offset=".63" stop-color="#111E35"/><stop offset="1" stop-color="#0B162B"/></linearGradient>
+ <linearGradient id="st" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#34C2EF"/><stop offset="1" stop-color="#57E1BE"/></linearGradient>
+ <radialGradient id="orb" cx="50%" cy="50%" r="50%"><stop stop-color="#2777B4" stop-opacity=".22"/><stop offset="1" stop-color="#2777B4" stop-opacity="0"/></radialGradient>
+ <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#7FA5C7" stroke-width="1" stroke-opacity=".07"/></pattern>
+ <clipPath id="clip"><rect x="0" y="0" width="1400" height="395" rx="15"/></clipPath>
+</defs>
+<g clip-path="url(#clip)">
+ <rect width="1400" height="395" fill="url(#bg)"/>
+ <rect width="1400" height="395" fill="url(#grid)"/>
+ <circle cx="1270" cy="180" r="320" fill="url(#orb)"/>
+ <rect width="1400" height="5" fill="url(#st)"/>
+ <path d="M43 63H77" stroke="#55DCC4" stroke-width="4" stroke-linecap="square"/>
+ <text x="94" y="70" fill="#A5BFD6" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" letter-spacing="3">ENGINEERING / PROFILE</text>
+ <text x="850" y="70" fill="#6585A4" font-family="Arial,Helvetica,sans-serif" font-size="16" text-anchor="end" letter-spacing="1">ailevated-randy-alonzo</text>
+ <text x="42" y="184" fill="#F7FBFF" font-family="Arial,Helvetica,sans-serif" font-size="79" font-weight="800" letter-spacing="-3">Randy M. Alonzo<tspan fill="#4ACFED">.</tspan></text>
+ <text x="45" y="239" fill="#D6E5F2" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="500">Full-stack development <tspan fill="#6C8BAA">/</tspan> Backend systems <tspan fill="#6C8BAA">/</tspan> Cloud</text>
+ <path d="M44 266H853" stroke="#6D8AA8" stroke-opacity=".5" stroke-width="1"/>
+ <text x="44" y="303" fill="#8EABC6" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" letter-spacing="1">DEVELOPER  +  IT SUPPORT SPECIALIST</text>
+ <text x="44" y="358" fill="#748FAB" font-family="Arial,Helvetica,sans-serif" font-size="17" letter-spacing="2">MANILA, PHILIPPINES  /  AILEVATED</text>
+ <path d="M898 47V352" stroke="#5B7796" stroke-opacity=".55" stroke-width="1"/>
+ <text x="936" y="70" fill="#5FE3CC" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" letter-spacing="2.1">SELECTED PROJECTS</text>
+ <g font-family="Arial,Helvetica,sans-serif" font-size="23">
+ <text x="936" y="126" fill="#4CD0EA" font-weight="700">01</text><text x="996" y="126" fill="#DCEAF6" font-weight="600">Hyrvanta</text>
+ <text x="936" y="178" fill="#4CD0EA" font-weight="700">02</text><text x="996" y="178" fill="#DCEAF6" font-weight="600">Nearby Nook</text>
+ <text x="936" y="230" fill="#4CD0EA" font-weight="700">03</text><text x="996" y="230" fill="#DCEAF6" font-weight="600">Storefront Admin</text>
+ <text x="936" y="282" fill="#4CD0EA" font-weight="700">04</text><text x="996" y="282" fill="#DCEAF6" font-weight="600">JobPilot</text>
+ </g>
+ <g fill="#2EDCC0"><rect x="1325" y="107" width="9" height="9" rx="2"/><rect x="1325" y="159" width="9" height="9" rx="2"/><rect x="1325" y="211" width="9" height="9" rx="2"/><rect x="1325" y="263" width="9" height="9" rx="2"/></g>
+ <path d="M936 316H1335" stroke="#6886A3" stroke-opacity=".48"/>
+ <text x="936" y="347" fill="#738EAA" font-family="Arial,Helvetica,sans-serif" font-size="15" letter-spacing="1.6">CODE  /  DECISIONS  /  DOCUMENTATION</text>
+</g>
+</svg>

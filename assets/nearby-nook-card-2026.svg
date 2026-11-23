@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="304" viewBox="0 0 720 304" role="img" aria-label="Nearby Nook project card">
+ <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0D1930"/><stop offset="1" stop-color="#0C2439"/></linearGradient><pattern id="p" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#A1C8D9" stroke-opacity=".055"/></pattern></defs>
+ <rect width="720" height="304" rx="17" fill="url(#g)"/><rect width="720" height="304" rx="17" fill="url(#p)"/><rect x="1" y="1" width="718" height="302" rx="16" fill="none" stroke="#F5C65F" stroke-opacity=".45" stroke-width="2"/>
+ <rect x="0" y="0" width="9" height="304" rx="3" fill="#F5C65F"/>
+ <text x="34" y="42" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="17" letter-spacing="2" fill="#F5C65F">03 / LOCATION PLATFORM</text>
+ <text x="34" y="103" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="43" fill="#F6FAFF">Nearby Nook</text>
+ <text x="35" y="144" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#BBD1E4">Neighborhood discovery, built on open data</text>
+ <path d="M35 168H681" stroke="#647B96" stroke-opacity=".55"/>
+ <text x="35" y="198" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#D5E6F3">Map search • Local API • Caching • Failover</text>
+ <rect x="32" y="235" width="652" height="44" rx="8" fill="#152F47"/>
+ <text x="49" y="263" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#F5C65F">React  /  Node.js  /  Leaflet  /  OpenStreetMap</text>
+ <text x="675" y="43" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#6689A8" text-anchor="end">GEOSPATIAL UI</text>
+ </svg>

@@ -111,74 +111,73 @@ A testable gateway handles **input validation, TTL caching, request coalescing, 
 
 ---
 
-## What the code shows
+## Engineering decisions worth inspecting
 
-| Engineering concern | Example you can inspect |
-|:--|:--|
-| **Authorization** | [Hyrvanta's authenticated D1 queries and owner-scoped data](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/app/api/jobs/route.ts) |
-| **Unreliable dependencies** | [Nearby Nook's upstream timeouts and provider fallback](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/server/osmGateway.js) |
-| **Cache behavior** | [Nearby Nook's TTL + in-flight request coalescing](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/server/cache.js) |
-| **Backend fundamentals** | [Storefront Admin's API validation and signed sessions](https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard/blob/main/server.js) |
-| **Testing** | [Hyrvanta's test scripts](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/package.json) and [Nearby Nook's test suite](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/server/osmGateway.test.js) |
+<a href="./docs/engineering-notes.md"><img src="./assets/engineering-evidence.svg" width="100%" alt="Engineering evidence — security, resilience, quality, and API design"/></a>
 
-[**Read the engineering notes →**](./docs/engineering-notes.md) — a closer look at implementation boundaries, code paths, tradeoffs and work that remains before production use.
+There are four questions I try to answer before calling a feature finished:
 
-## Technologies I use
+**01 / Who is allowed to access the data?**  
+In Hyrvanta, authorization belongs on the API—not in React state. [Inspect the authenticated job route](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/app/api/jobs/route.ts) and [security model](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/docs/security.md).
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<b>Software</b>
-<p>TypeScript · JavaScript · React · Node.js · Express · REST APIs · HTML/CSS</p>
-</td>
-<td width="50%" valign="top">
-<b>Cloud and data</b>
-<p>Cloudflare Workers · D1 · R2 · MySQL · SQL · Drizzle ORM</p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<b>Engineering practices</b>
-<p>Git · GitHub · Vitest · typechecking · ESLint · validation · authorization</p>
-</td>
-<td width="50%" valign="top">
-<b>IT operations</b>
-<p>Windows · Microsoft 365 · network troubleshooting · incident documentation</p>
-</td>
-</tr>
-</table>
+**02 / What happens when a dependency fails?**  
+Nearby Nook uses server-side timeouts, caching, request coalescing, and fallback between public data providers. [Read the gateway](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/server/osmGateway.js) and [cache implementation](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/server/cache.js).
 
-Experience depth varies by tool. I would rather link to working code than claim expertise that a repository cannot demonstrate.
+**03 / How do I know it works?**  
+Tests aren't a badge: they should exercise meaningful behavior. [Hyrvanta test scripts](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/package.json) cover domain, UI, and rendered output; [Nearby Nook gateway tests](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/server/osmGateway.test.js) cover service responses.
 
-## Background
+**04 / Can another engineer understand the contract?**  
+Storefront Admin documents CRUD routes, session handling, and input validation. [Read the actual Express implementation](https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard/blob/main/server.js).
 
-**Atos — IT Support Specialist**  
-First-line troubleshooting, issue triage, escalation and documentation.
-
-**Technological University of the Philippines–Manila — B.S. Information Technology**  
-Coursework and academic work in software, networks and systems.
-
-**AILEVATED — Founder**  
-Technology education, AI productivity workflows and software projects.
-
-I am interested in engineering teams where **technical fundamentals, thoughtful design, code review and operational discipline** matter. My support background makes me especially interested in the connection between building systems and keeping them usable.
+**[Open my engineering review notes →](./docs/engineering-notes.md)** — architecture, evidence, tradeoffs, and limitations behind the project showcase.
 
 ---
 
-## Get in touch
+## Engineering toolkit
+
+<img src="./assets/engineering-focus.svg" width="100%" alt="Color-coded engineering capabilities for applications, backend systems, cloud and IT operations"/>
+
+My most-used project technologies are **TypeScript, JavaScript, React, Node.js, Express, MySQL, Cloudflare Workers, D1, and R2**. I also work with Git/GitHub, Vitest, ESLint, input validation, authentication, and access-control patterns.
+
+In IT operations, my day-to-day foundation includes **Windows, Microsoft 365, networking fundamentals, issue triage, and documentation**.
+
+The four areas above aren't equal claims of expertise. They describe tools and responsibilities demonstrated in source code or professional experience. When a reviewer wants more detail, the linked repositories show the implementation.
+
+---
+
+## Background & professional journey
+
+<img src="./assets/professional-journey.svg" width="100%" alt="Professional experience timeline: Atos IT Support, B.S. Information Technology at TUP Manila, and AILEVATED"/>
+
+**Atos — IT Support Specialist**  
+First-line incident triage, hardware/software troubleshooting, escalation, and documentation. It has taught me to value reproducible problems, user impact, and clear handovers.
+
+**Technological University of the Philippines–Manila — B.S. Information Technology**  
+Academic work in software, databases, networking, and information systems.
+
+**AILEVATED — Founder**  
+I build technical learning resources, software projects, and practical AI workflows for an audience of learners and professionals.
+
+I'm pursuing **software engineering opportunities** with teams that care about correctness, maintainability, helpful feedback, and the people who depend on the software.
+
+---
+
+## Let's work together
+
+<a href="mailto:randyalonzo101@gmail.com"><img src="./assets/connect-editorial.svg" width="100%" alt="Let's build something useful — engineering opportunities and collaborations with Randy M. Alonzo"/></a>
 
 <div align="center">
-<p><b>Have an engineering role, collaboration or a product problem in mind?</b></p>
-<p><a href="https://portfolio.randyalonzo101.workers.dev">Portfolio</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/randy-m-alonzo/">LinkedIn</a> &nbsp;·&nbsp; <a href="mailto:randyalonzo101@gmail.com">Email</a></p>
-</div>
 
-| Professional | Community & freelance |
-|:--|:--|
-| [Email — randyalonzo101@gmail.com](mailto:randyalonzo101@gmail.com) | [AWS Builder — badges](https://builder.aws.com/community/@ranbyruz?tab=badges) |
-| [Personal portfolio](https://portfolio.randyalonzo101.workers.dev) | [Fiverr — AILEVATED](https://www.fiverr.com/sellers/ailevated/) |
-| [LinkedIn](https://www.linkedin.com/in/randy-m-alonzo/) | [Upwork — freelancer profile](https://www.upwork.com/freelancers/~01e817b1de0c60f604?viewMode=1&mp_source=share) |
-| [GitHub](https://github.com/ailevated-randy-alonzo) | [AILEVATED](https://ailevated.tech) · [YouTube](https://www.youtube.com/@ailevated) |
+<a href="mailto:randyalonzo101@gmail.com"><img src="https://img.shields.io/badge/EMAIL_ME-167E99?style=for-the-badge&logo=gmail&logoColor=white" alt="Email me"></a>
+<a href="https://www.linkedin.com/in/randy-m-alonzo/"><img src="https://img.shields.io/badge/CONNECT_ON_LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="https://portfolio.randyalonzo101.workers.dev"><img src="https://img.shields.io/badge/VIEW_PORTFOLIO-1B526F?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Portfolio"></a>
 
-<div align="center">
-<sub>Thanks for exploring my work. The best engineering conversations start with a question.</sub>
+**Professional:** [GitHub](https://github.com/ailevated-randy-alonzo) · [Email](mailto:randyalonzo101@gmail.com) · [LinkedIn](https://www.linkedin.com/in/randy-m-alonzo/)
+
+**Learning & community:** [AWS Builder — achievements and badges](https://builder.aws.com/community/@ranbyruz?tab=badges) · [AILEVATED](https://ailevated.tech) · [YouTube](https://www.youtube.com/@ailevated)
+
+**Freelance & collaboration:** [Fiverr services](https://www.fiverr.com/sellers/ailevated/) · [Upwork profile](https://www.upwork.com/freelancers/~01e817b1de0c60f604?viewMode=1&mp_source=share)
+
+<sub>Built with curiosity, systems thinking, and a commitment to improving real software.</sub>
+
 </div>

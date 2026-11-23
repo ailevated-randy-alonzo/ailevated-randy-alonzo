@@ -1,144 +1,114 @@
-<div align="center">
+# Randy M. Alonzo
 
-<img src="./assets/ailevated-hero-2026.svg" alt="Randy M. Alonzo — full-stack engineering, cloud and systems portfolio" width="100%" />
+**Full-stack developer · IT Support Specialist at Atos**  
+Manila, Philippines · B.S. Information Technology, TUP Manila (in progress)
 
-### Engineering-minded developer. Real problems. Thoughtful solutions.
+I work in frontline IT support and build web applications outside that role. Support taught me to investigate problems from the user's side; writing software gives me a way to address them in the product itself.
 
-I design and build practical web products—from accessible interfaces and backend APIs to data models, authorization, and cloud services.
+I'm moving toward software engineering, particularly backend development and cloud-based applications. Below is work you can inspect—not a list of technologies I hope to learn.
 
-<p>
-  <a href="https://portfolio.randyalonzo101.workers.dev"><img src="https://img.shields.io/badge/VIEW_PORTFOLIO-2563EB?style=for-the-badge&logo=cloudflare&logoColor=white" alt="View portfolio" /></a>
-  <a href="mailto:randyalonzo101@gmail.com"><img src="https://img.shields.io/badge/CONTACT_ME-0F172A?style=for-the-badge&logo=gmail&logoColor=white" alt="Email me" /></a>
-  <a href="https://www.linkedin.com/in/randy-m-alonzo/"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-</p>
-
-**Full-Stack Developer** · **IT Support Specialist at Atos** · **Founder, AILEVATED**  
-📍 Metro Manila, Philippines · Open to engineering opportunities and collaborations
-
-</div>
+[**Portfolio**](https://portfolio.randyalonzo101.workers.dev) · [LinkedIn](https://www.linkedin.com/in/randy-m-alonzo/) · [Email](mailto:randyalonzo101@gmail.com)
 
 ---
 
-## 👋 Hi, I'm Randy.
+## Selected work
 
-I'm a developer and IT support professional pursuing a **B.S. in Information Technology at the Technological University of the Philippines–Manila**.
+### 01 / [Hyrvanta — Career Intelligence](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence)
 
-My technical-support background influences how I build software: start with the user's problem, make failure states understandable, protect data, document decisions, and improve through testing.
+**React · TypeScript · Cloudflare Workers · D1 · R2 · Drizzle**
 
-**What I focus on:** full-stack product engineering, backend and API design, cloud-native applications, and systems-oriented problem solving.
+A career workspace built around a specific constraint: job opportunities and résumé claims should be traceable to evidence rather than silently inferred.
 
-<table>
-<tr>
-<td width="33%" valign="top"><b>01 — BUILD</b><br/>Responsive interfaces, APIs, authentication, and relational data.</td>
-<td width="33%" valign="top"><b>02 — VERIFY</b><br/>Input validation, ownership checks, tests, and honest product states.</td>
-<td width="33%" valign="top"><b>03 — OPERATE</b><br/>Troubleshooting, clear documentation, and dependable workflows.</td>
-</tr>
-</table>
+- **Data boundary:** authenticated, owner-scoped APIs; D1 records for career data; private R2 storage for résumé files.
+- **External sources:** Greenhouse and Lever adapters with source validation, deduplication, freshness rules, timeouts, and retries. Jooble support is optional.
+- **Checks:** the repository defines domain/route tests, React interaction tests, TypeScript checks, linting, a production build, and rendered-HTML checks.
 
-## 🏗 Selected engineering projects
+**Explore:** [Architecture](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/docs/current-architecture.md) · [Security model](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/docs/security.md) · [Test suite](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/tree/main/tests) · [Source code](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence)
 
-**A closer look at the software I've built.** Each repository includes implementation details and instructions; some external integrations or hosted demos require configuration or authorization.
+<sub>Project scope: a working portfolio release. Production identity, employer-source configuration, extension pairing, and some integrations still require setup or further implementation. Preview opportunities are labeled.</sub>
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<a href="https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence"><img src="./assets/hyrvanta-card-2026.svg" alt="Hyrvanta project — evidence-first career intelligence" width="100%"/></a>
-<br/><b>Hyrvanta — Career Intelligence</b><br/>
-Privacy-conscious career workspace with verifiable job-source adapters, owner-scoped APIs, and private résumé storage.<br/><br/>
-<a href="https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence"><b>Code, architecture &amp; setup →</b></a><br/>
-<sub>Working portfolio release; hosted integrations require configuration.</sub>
-</td>
-<td width="50%" valign="top">
-<a href="https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard"><img src="./assets/storefront-card-2026.svg" alt="Storefront Admin — full-stack e-commerce inventory dashboard" width="100%"/></a>
-<br/><b>Storefront Admin — Inventory Dashboard</b><br/>
-Authenticated inventory CRUD, Express REST APIs, server-side validation, stock insights, and MySQL persistence.<br/><br/>
-<a href="https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard"><b>Code, API routes &amp; screenshots →</b></a>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<a href="https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery"><img src="./assets/nearby-nook-card-2026.svg" alt="Nearby Nook — local discovery maps application" width="100%"/></a>
-<br/><b>Nearby Nook — Local Discovery</b><br/>
-Interactive OpenStreetMap discovery with synchronized maps, local search, server caching, throttling, and provider failover.<br/><br/>
-<a href="https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery"><b>Code, architecture &amp; screenshots →</b></a>
-</td>
-<td width="50%" valign="top">
-<a href="https://github.com/ailevated-randy-alonzo/jobpilot-career-copilot"><img src="./assets/jobpilot-card-2026.svg" alt="JobPilot — evidence-based AI career copilot" width="100%"/></a>
-<br/><b>JobPilot — AI Career Copilot</b><br/>
-Application pipeline and evidence-backed role comparison, with private résumé files and server-side structured AI outputs.<br/><br/>
-<a href="https://github.com/ailevated-randy-alonzo/jobpilot-career-copilot"><b>Code, product tour &amp; local demo →</b></a><br/>
-<sub>Hosted workspace requires authorized access.</sub>
-</td>
-</tr>
-</table>
+### 02 / [Nearby Nook — Local Discovery](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery)
 
-<details>
-<summary><b>Explore two more projects</b></summary>
+**React · Node.js · Leaflet · OpenStreetMap · Vitest**
 
-- **[Personal Portfolio](https://github.com/ailevated-randy-alonzo/randy-alonzo-portfolio)** — A portfolio connecting real professional experience, technical projects, and ongoing learning. [Live site](https://portfolio.randyalonzo101.workers.dev).
-- **[AILEVATED AI Platform](https://github.com/ailevated-randy-alonzo/ailevated-ai-platform)** — A responsive AI-tools, prompts, and learning-resource interface.
+A map-based neighborhood explorer with a deliberately small server boundary between the browser and public location providers.
 
-</details>
+- **API design:** a same-origin Node API validates requests, manages caching and coalescing, applies per-client limits, and handles provider timeouts/failover.
+- **Data honesty:** missing place details stay missing; development-only fixture data is not silently served as real production listings.
+- **Checks:** `npm run check` runs Vitest and produces a Vite build.
 
-## 🧰 Technologies & practical experience
+**Explore:** [Architecture and tradeoffs](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/docs/architecture.md) · [Application tests](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/tree/main/tests) · [Source code](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery)
 
-<p>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
-<img src="https://img.shields.io/badge/React-149ECA?style=flat-square&logo=react&logoColor=white" alt="React"/>
-<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
-<img src="https://img.shields.io/badge/Express-303030?style=flat-square&logo=express&logoColor=white" alt="Express"/>
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
-<img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare"/>
-<img src="https://img.shields.io/badge/Git-EE513B?style=flat-square&logo=git&logoColor=white" alt="Git"/>
-<img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white" alt="Vitest"/>
-</p>
+### 03 / [Storefront Admin — Inventory Dashboard](https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard)
 
-| Domain | Tools and practices |
-|:--|:--|
-| **Application engineering** | TypeScript, JavaScript, React, HTML/CSS, Node.js, Express |
-| **Data & backend** | MySQL, SQL, Cloudflare D1, Drizzle ORM, REST/JSON APIs, private R2 storage |
-| **Quality & security** | Vitest, ESLint, input validation, authentication, authorization, owner-scoped access |
-| **IT & systems** | Windows, Microsoft 365, network troubleshooting, incident documentation, service desk operations |
+**Node.js · Express · MySQL · JavaScript**
 
-<sub>Skills reflect project implementation and professional exposure; experience depth varies by technology.</sub>
+An inventory management app built around ordinary but important backend workflows: sign-in, product records, validation, and stock visibility.
 
-## 🧠 What guides my engineering
+- **Backend:** REST endpoints for product CRUD, server-side input validation, bcrypt password verification, and signed, expiring sessions.
+- **Frontend:** responsive inventory views, product search/filtering, confirmation states, and stock summaries.
 
-- **Solve the underlying problem.** Reproduce issues, understand constraints, and optimize for the people using the product.
-- **Design for trust.** Favor explicit ownership checks, transparent uncertainty, private data handling, and grounded AI outputs.
-- **Ship work that can be evaluated.** Provide usable source code, project READMEs, architecture notes, realistic screenshots, and clear setup steps.
+**Explore:** [API and setup documentation](https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard#api-routes) · [Server implementation](https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard/blob/main/server.js) · [Source code](https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard)
 
-## 💼 Experience & learning
+### 04 / [JobPilot — AI Career Copilot](https://github.com/ailevated-randy-alonzo/jobpilot-career-copilot)
 
-- **IT Support Specialist — Atos:** First-line support, issue triage, troubleshooting, escalation, and documentation.
-- **B.S. Information Technology — Technological University of the Philippines–Manila:** In progress.
-- **Founder — AILEVATED:** Hands-on technology learning, practical AI workflows, and original digital resources.
+**React · TypeScript · Cloudflare D1/R2 · OpenAI Responses API**
 
-I'm developing toward software engineering, backend/cloud development, and systems-oriented roles.
+An authenticated application tracker with private résumé files and role comparisons that identify supporting evidence and skill gaps.
 
-## 🌐 Contact & professional profiles
+- AI calls happen server-side with structured outputs; résumé and application records are subject to ownership checks.
+- The hosted workspace is private. The repository documents its local demonstration path and current boundaries.
 
-| Connect | Link |
-|:--|:--|
-| ✉️ **Email** | [randyalonzo101@gmail.com](mailto:randyalonzo101@gmail.com) |
-| 🌍 **Portfolio** | [portfolio.randyalonzo101.workers.dev](https://portfolio.randyalonzo101.workers.dev) |
-| 💼 **LinkedIn** | [Randy M. Alonzo](https://www.linkedin.com/in/randy-m-alonzo/) |
-| 🐙 **GitHub** | [@ailevated-randy-alonzo](https://github.com/ailevated-randy-alonzo) |
-| ☁️ **AWS Builder badges** | [Community achievements & badges](https://builder.aws.com/community/@ranbyruz?tab=badges) |
-| 🎨 **Fiverr** | [AILEVATED seller profile](https://www.fiverr.com/sellers/ailevated/) |
-| 💼 **Upwork** | [Freelancer profile](https://www.upwork.com/freelancers/~01e817b1de0c60f604?viewMode=1&mp_source=share) |
-| 🚀 **AILEVATED** | [Website](https://ailevated.tech) · [LinkedIn page](https://www.linkedin.com/company/ailevated/) |
-| ▶️ **YouTube** | [@ailevated](https://www.youtube.com/@ailevated) |
+**Explore:** [Project walkthrough and architecture](https://github.com/ailevated-randy-alonzo/jobpilot-career-copilot) · [Application screenshots](https://github.com/ailevated-randy-alonzo/jobpilot-career-copilot/tree/main/docs/screenshots)
 
 ---
 
-<div align="center">
+### From the actual applications
 
-### Have a project, collaboration, or engineering opportunity in mind?
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery">
+<img src="https://raw.githubusercontent.com/ailevated-randy-alonzo/nearby-nook-local-discovery/main/docs/screenshots/nearby-nook-map-results.png" width="100%" alt="Nearby Nook application screenshot showing an interactive map and search results" />
+</a>
+<br/><sub><b>Nearby Nook</b> — map and place results. <a href="https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/tree/main/docs/screenshots">More captures</a></sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard">
+<img src="https://raw.githubusercontent.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard/main/assets/screenshots/dashboard-dark.png" width="100%" alt="Storefront Admin application screenshot showing the inventory dashboard" />
+</a>
+<br/><sub><b>Storefront Admin</b> — inventory dashboard. <a href="https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard/tree/main/assets/screenshots">More captures</a></sub>
+</td>
+</tr>
+</table>
 
-**[Explore my portfolio](https://portfolio.randyalonzo101.workers.dev) · [Connect on LinkedIn](https://www.linkedin.com/in/randy-m-alonzo/) · [Send an email](mailto:randyalonzo101@gmail.com)**
+These are screenshots stored in the linked project repositories, not illustrations created for this profile.
 
-<sub>Designed to show the work—not just list the tools. © 2026 Randy M. Alonzo.</sub>
+**Additional projects:** [Personal portfolio](https://github.com/ailevated-randy-alonzo/randy-alonzo-portfolio) · [AILEVATED learning platform](https://github.com/ailevated-randy-alonzo/ailevated-ai-platform)
 
-</div>
+## Engineering details I pay attention to
+
+| Concern | Example to review |
+| --- | --- |
+| **Ownership and privacy** | [Hyrvanta's server-side access boundaries](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/docs/security.md) |
+| **Unreliable dependencies** | [Nearby Nook's OpenStreetMap gateway, caching, and failover](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/docs/architecture.md) |
+| **Backend fundamentals** | [Storefront Admin's validation, authentication, and product APIs](https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard) |
+| **Verification** | [Hyrvanta's checks](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/package.json) and [Nearby Nook's test/build workflow](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/package.json) |
+
+I'm comfortable discussing what these projects **do not** yet cover. A working portfolio release is not the same thing as a production system with observed traffic, operational SLOs, and mature deployment controls.
+
+## Background
+
+- **Atos — IT Support Specialist:** first-line support, troubleshooting, issue triage, escalation, and documentation.
+- **Technological University of the Philippines–Manila:** B.S. in Information Technology, ongoing.
+- **AILEVATED:** I publish practical technical learning material and build tools around AI, development, and IT.
+
+**Languages and technologies used in the projects above:** TypeScript, JavaScript, React, Node.js, Express, SQL/MySQL, Cloudflare Workers/D1/R2, Git, Vitest. My IT support work also involves Windows, Microsoft 365, and networking fundamentals.
+
+## Contact
+
+For engineering opportunities or project discussions: **[randyalonzo101@gmail.com](mailto:randyalonzo101@gmail.com)**
+
+[Portfolio](https://portfolio.randyalonzo101.workers.dev) · [LinkedIn](https://www.linkedin.com/in/randy-m-alonzo/) · [GitHub](https://github.com/ailevated-randy-alonzo)
+
+**Elsewhere:** [AWS Builder — badges](https://builder.aws.com/community/@ranbyruz?tab=badges) · [Fiverr](https://www.fiverr.com/sellers/ailevated/) · [Upwork](https://www.upwork.com/freelancers/~01e817b1de0c60f604?viewMode=1&mp_source=share) · [AILEVATED](https://ailevated.tech) · [YouTube](https://www.youtube.com/@ailevated)

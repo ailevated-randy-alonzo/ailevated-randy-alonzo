@@ -37,7 +37,7 @@ A map-based neighborhood explorer with a deliberately small server boundary betw
 - **Data honesty:** missing place details stay missing; development-only fixture data is not silently served as real production listings.
 - **Checks:** `npm run check` runs Vitest and produces a Vite build.
 
-**Explore:** [Architecture and tradeoffs](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/docs/architecture.md) · [Application tests](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/tree/main/tests) · [Source code](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery)
+**Explore:** [Architecture and tradeoffs](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/docs/architecture.md) · [API gateway tests](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/server/osmGateway.test.js) · [Domain tests](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/src/domain.test.js) · [Source code](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery)
 
 ### 03 / [Storefront Admin — Inventory Dashboard](https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard)
 

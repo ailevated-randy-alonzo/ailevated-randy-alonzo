@@ -1,186 +1,152 @@
 <div align="center">
 
-<a href="https://portfolio.randyalonzo101.workers.dev">
-<img src="./assets/profile-cover.svg" alt="Randy M. Alonzo, software engineering portfolio focused on full-stack development, backend APIs and cloud systems" width="100%">
-</a>
+<a href="https://portfolio.randyalonzo101.workers.dev"><img src="./assets/profile-cover.svg" alt="Randy M. Alonzo — software engineering portfolio covering full-stack development, backend and cloud systems" width="100%"></a>
 
-### Hi, I'm Randy. I troubleshoot real systems—and build software to make them better.
+#### Developer · IT Support Specialist at Atos · Founder of AILEVATED
 
-I'm an IT support specialist and a developer with a particular interest in **backend engineering, cloud infrastructure, and trustworthy products**.
+I bring a technical support mindset to software engineering: understand the user, reproduce the issue, protect the data, and make the system easier to operate.
 
 <p>
-<a href="https://portfolio.randyalonzo101.workers.dev"><img src="https://img.shields.io/badge/PORTFOLIO-146C99?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Portfolio"></a>
+<a href="https://portfolio.randyalonzo101.workers.dev"><img src="https://img.shields.io/badge/VIEW_PORTFOLIO-147BA7?style=for-the-badge&logo=cloudflare&logoColor=white" alt="View portfolio"></a>
 <a href="https://www.linkedin.com/in/randy-m-alonzo/"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-<a href="mailto:randyalonzo101@gmail.com"><img src="https://img.shields.io/badge/EMAIL-1E344C?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="mailto:randyalonzo101@gmail.com"><img src="https://img.shields.io/badge/EMAIL_ME-193147?style=for-the-badge&logo=gmail&logoColor=white" alt="Email me"></a>
 </p>
 
-<sub>Manila, Philippines &nbsp;·&nbsp; IT Support Specialist at Atos &nbsp;·&nbsp; Founder, AILEVATED</sub>
-
-[Featured work](#selected-engineering-work) &nbsp;·&nbsp; [Architecture](#architecture-behind-the-project) &nbsp;·&nbsp; [Technical strengths](#how-i-approach-engineering) &nbsp;·&nbsp; [Contact](#connect)
+**Manila, Philippines** · Full-stack applications · Backend APIs · Cloud infrastructure
 
 </div>
 
 ---
 
-## What I bring to engineering
+## What you'll find here
 
-Working in technical support has made me attentive to something that is easy to overlook when building applications: **what happens when the expected path fails?**
+I build projects around problems I can explain, implement, and test. My focus is **backend software engineering and cloud-based applications**, informed by hands-on experience with technical troubleshooting and incident workflows.
 
-That perspective shapes my projects. I focus on clear user experiences, predictable APIs, careful handling of private data, and implementations that another developer can inspect and run.
+Instead of a long skill list, here are four things you can inspect.
 
-I am building toward a software engineering career in teams working on **backend systems, cloud services, developer tools, and product reliability**.
+## Selected projects
 
-| I build | I pay attention to | I bring from support |
-|:--|:--|:--|
-| Web apps and REST APIs | Authorization, validation, tests, failure states | Triage, reproducibility, documentation |
+### [01 · Hyrvanta — private, evidence-first career software](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence)
 
-## Selected engineering work
+<a href="https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence"><img src="https://raw.githubusercontent.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/main/public/og.png" width="100%" alt="Hyrvanta application preview from its repository"></a>
 
-### 01 — Hyrvanta / evidence-first career intelligence
+**The problem.** Job-search applications often mix verified information with assumptions. Résumés are especially sensitive: users need control over private documents and claims about their experience.
 
-**The challenge:** How do you help someone evaluate opportunities and tailor a résumé *without inventing evidence or exposing personal records?*
+**What I built.** A React/TypeScript career workspace with job-source adapters, application tracking, a structured Career Vault, and private résumé versions.
 
-<a href="https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence"><img src="https://raw.githubusercontent.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/main/public/og.png" width="100%" alt="Hyrvanta project preview from the application repository"></a>
+**What matters technically:**
 
-**The product:** An application and career-evidence workspace, with employer-board adapters, saved opportunities, private résumé versions, and user-controlled application tracking.
+- Authenticated Worker routes check ownership before returning or changing private records.
+- Cloudflare D1 stores structured information; private R2 storage handles résumé files.
+- Greenhouse and Lever adapters validate, normalize and deduplicate source records.
+- The repo contains domain, route, UI and rendered-HTML tests alongside type-checking and lint scripts.
 
-**The engineering:**
-
-- **API security:** Authenticated, owner-scoped routes protect application records and résumé access.
-- **Data boundaries:** D1 handles structured records; private R2 handles document files.
-- **External data:** Greenhouse and Lever adapters normalize incoming jobs and apply verification, freshness, deduplication and URL-safety rules.
-- **Verification:** The repository defines domain and route tests, React interaction tests, TypeScript checking, linting and rendered-page checks.
+[**Explore source**](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence) · [Architecture](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/docs/current-architecture.md) · [Security model](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/docs/security.md) · [Tests](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/tree/main/tests)
 
 <sub>React 19 · TypeScript · Cloudflare Workers · D1 · R2 · Drizzle ORM · Vitest</sub>
 
-**Explore the implementation:** [Code](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence) · [Architecture](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/docs/current-architecture.md) · [Security model](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/docs/security.md) · [Test suite](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/tree/main/tests)
+#### The architecture at a glance
 
-#### Architecture behind the project
+<a href="https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/docs/current-architecture.md"><img src="./assets/hyrvanta-architecture.svg" alt="Hyrvanta architecture with React client, authenticated API, Cloudflare D1, private R2 and external job-source synchronization" width="100%"></a>
 
-<a href="https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/docs/current-architecture.md"><img src="./assets/hyrvanta-architecture.svg" width="100%" alt="Architecture of Hyrvanta from browser to authenticated API and D1/R2, with separate employer-feed synchronization"></a>
+**Why this design?** UI state isn't an authorization boundary. The server must check who owns each record. Separating D1 metadata from R2 documents also keeps private files out of the public frontend.
 
-**In plain English:** the browser talks to authenticated server routes. The server checks record ownership before accessing structured data or private files. Job-source adapters use a separate ingestion path rather than exposing providers directly to the browser.
-
-<sub>Scope: a portfolio-ready working release. Production identity, employer-source configuration, extension pairing, and monitoring still need additional setup or implementation. Sample listings are labeled as previews.</sub>
+<sub>Release scope: portfolio-ready working release. Real employer-source setup, production identity, extension pairing and monitoring need additional configuration or work. Preview records are explicitly labeled.</sub>
 
 ---
 
-### 02 — Nearby Nook / local discovery without invented data
+### 02–04 · Different problems, different solutions
 
 <table>
 <tr>
 <td width="45%" valign="top">
-<a href="https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery"><img src="https://raw.githubusercontent.com/ailevated-randy-alonzo/nearby-nook-local-discovery/main/docs/screenshots/nearby-nook-map-results.png" width="100%" alt="Actual Nearby Nook map-search application screenshot"></a>
+<a href="https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery"><img src="https://raw.githubusercontent.com/ailevated-randy-alonzo/nearby-nook-local-discovery/main/docs/screenshots/nearby-nook-map-results.png" width="100%" alt="Nearby Nook map and local place results from the application"></a>
 </td>
 <td valign="top">
-<b>The challenge:</b> Public place data can be incomplete or temporarily unavailable.<br><br>
-<b>The build:</b> A React/Leaflet map with a same-origin Node API.<br><br>
-<b>The decision:</b> Put caching, validation, rate limiting and Overpass provider failover on the server. Don't silently replace unavailable live results with fictional places.<br><br>
-<a href="https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery"><b>Repository</b></a> · <a href="https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/docs/architecture.md">Architecture</a> · <a href="https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/server/osmGateway.test.js">Gateway tests</a>
+<h3><a href="https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery">Nearby Nook</a></h3>
+<strong>React · Node.js · Leaflet</strong>
+<p><b>Problem:</b> Public map providers can return incomplete data or fail.</p>
+<p><b>Approach:</b> Same-origin API with validation, short-lived caching, rate limiting, and Overpass failover. No silent fictional listings.</p>
+<a href="https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/docs/architecture.md">Architecture notes</a> · <a href="https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/server/osmGateway.test.js">Gateway tests</a>
 </td>
 </tr>
-</table>
-
-<sub>React · Node.js · Leaflet · OpenStreetMap · Vitest</sub>
-
-### 03 — Storefront Admin / full-stack inventory operations
-
-<table>
 <tr>
 <td width="45%" valign="top">
-<a href="https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard"><img src="https://raw.githubusercontent.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard/main/assets/screenshots/dashboard-dark.png" width="100%" alt="Actual Storefront Admin inventory dashboard screenshot"></a>
+<a href="https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard"><img src="https://raw.githubusercontent.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard/main/assets/screenshots/dashboard-dark.png" width="100%" alt="Storefront Admin inventory-management application screenshot"></a>
 </td>
 <td valign="top">
-<b>The challenge:</b> Product updates need consistent validation and protected write operations.<br><br>
-<b>The build:</b> An inventory dashboard with search, stock views and product CRUD.<br><br>
-<b>The decision:</b> Use an Express API backed by MySQL, with bcrypt verification, signed sessions and server-side input checks.<br><br>
-<a href="https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard"><b>Repository</b></a> · <a href="https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard/blob/main/server.js">Backend source</a> · <a href="https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard#api-routes">API contract</a>
+<h3><a href="https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard">Storefront Admin</a></h3>
+<strong>Node.js · Express · MySQL</strong>
+<p><b>Problem:</b> Inventory updates require predictable writes and protected admin access.</p>
+<p><b>Approach:</b> Product CRUD through a validated REST API, password verification, signed sessions, and stock summaries.</p>
+<a href="https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard/blob/main/server.js">Server implementation</a> · <a href="https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard#api-routes">API reference</a>
 </td>
 </tr>
-</table>
-
-<sub>JavaScript · Node.js · Express · MySQL</sub>
-
-### 04 — JobPilot / grounded AI career workflows
-
-<table>
 <tr>
 <td width="45%" valign="top">
-<a href="https://github.com/ailevated-randy-alonzo/jobpilot-career-copilot"><img src="https://raw.githubusercontent.com/ailevated-randy-alonzo/jobpilot-career-copilot/main/docs/screenshots/jobpilot-dashboard.png" width="100%" alt="Actual JobPilot application dashboard screenshot"></a>
+<a href="https://github.com/ailevated-randy-alonzo/jobpilot-career-copilot"><img src="https://raw.githubusercontent.com/ailevated-randy-alonzo/jobpilot-career-copilot/main/docs/screenshots/jobpilot-dashboard.png" width="100%" alt="JobPilot application dashboard screenshot"></a>
 </td>
 <td valign="top">
-<b>The challenge:</b> AI-generated job advice can sound convincing without reflecting a person's real experience.<br><br>
-<b>The build:</b> An application tracker, private résumé library and evidence-backed interview preparation.<br><br>
-<b>The decision:</b> Keep API keys and AI requests server-side, protect résumé files with ownership checks and request structured outputs.<br><br>
-<a href="https://github.com/ailevated-randy-alonzo/jobpilot-career-copilot"><b>Repository</b></a> · <a href="https://github.com/ailevated-randy-alonzo/jobpilot-career-copilot/tree/main/docs/screenshots">Product walkthrough</a>
+<h3><a href="https://github.com/ailevated-randy-alonzo/jobpilot-career-copilot">JobPilot</a></h3>
+<strong>React · TypeScript · Cloudflare</strong>
+<p><b>Problem:</b> AI job advice needs evidence rather than confident-sounding guesses.</p>
+<p><b>Approach:</b> Owner-scoped applications and files, server-side OpenAI Responses API integration, and structured role comparisons.</p>
+<a href="https://github.com/ailevated-randy-alonzo/jobpilot-career-copilot">Source &amp; docs</a> · <a href="https://github.com/ailevated-randy-alonzo/jobpilot-career-copilot/tree/main/docs/screenshots">Product walkthrough</a>
 </td>
 </tr>
 </table>
 
-<sub>React · TypeScript · Cloudflare D1/R2 · OpenAI Responses API</sub>
+<sub>Screenshots above come from each application's repository. JobPilot's hosted workspace requires authorized access; its README explains local demonstration.</sub>
 
-<sub>JobPilot's hosted workspace requires authorized access. The repository provides local demonstration instructions.</sub>
-
-<details>
-<summary><b>Two more projects — portfolio website &amp; AILEVATED</b></summary>
-
-- **[Personal portfolio](https://github.com/ailevated-randy-alonzo/randy-alonzo-portfolio)** — professional experience, technical projects and practical learning. [See the live website](https://portfolio.randyalonzo101.workers.dev).
-- **[AILEVATED AI platform](https://github.com/ailevated-randy-alonzo/ailevated-ai-platform)** — a responsive AI-tools and learning-resources interface.
-
-</details>
+**More work:** [Personal portfolio](https://github.com/ailevated-randy-alonzo/randy-alonzo-portfolio) · [AILEVATED AI platform](https://github.com/ailevated-randy-alonzo/ailevated-ai-platform)
 
 ---
 
-## How I approach engineering
+## Engineering review
 
-| Principle | What you can inspect |
+These projects have different levels of completeness and testing. Here are the areas where you can verify how I think about implementation:
+
+| Engineering concern | Evidence |
 |:--|:--|
-| **Secure the boundary** | [Hyrvanta's owner-scoped reads and private file access](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/docs/security.md) |
-| **Make failures explicit** | [Nearby Nook's provider timeouts, caching and error handling](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/docs/architecture.md) |
-| **Keep API behavior understandable** | [Storefront Admin's routes and validation](https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard/blob/main/server.js) |
-| **Test what matters** | [Hyrvanta's verification scripts](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/package.json) · [Nearby Nook's Vitest suite](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/package.json) |
+| **Authorization & privacy** | [Hyrvanta — server-side ownership checks, private R2 storage](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/docs/security.md) |
+| **Dependency failure** | [Nearby Nook — provider timeouts, caching and failover](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/docs/architecture.md) |
+| **Backend fundamentals** | [Storefront Admin — REST routes and signed sessions](https://github.com/ailevated-randy-alonzo/fullstack-ecommerce-dashboard/blob/main/server.js) |
+| **Quality gates** | [Hyrvanta — domain/UI/build checks](https://github.com/ailevated-randy-alonzo/hyrvanta-career-intelligence/blob/main/package.json) · [Nearby Nook — Vitest/build scripts](https://github.com/ailevated-randy-alonzo/nearby-nook-local-discovery/blob/main/package.json) |
 
 <details>
-<summary><b>Engineering tradeoffs and next improvements</b></summary>
+<summary><b>What I would improve before operating these projects at scale</b></summary>
 
-- **Hyrvanta:** complete production identity/integration configuration and expand monitoring, rate limiting and browser-extension pairing.
-- **Nearby Nook:** replace process-local caching and throttling with shared services before any multi-instance deployment.
-- **Storefront Admin:** extend automated API and integration test coverage; remove demo credentials before public use.
-- **JobPilot:** expand end-to-end and accessibility checks; offer a public demonstration with synthetic data.
+- **Hyrvanta:** complete production identity, employer integration and monitoring; harden rate limits and browser-extension pairing.
+- **Nearby Nook:** replace process-local cache and rate limits with shared infrastructure for multi-instance operation.
+- **Storefront Admin:** add broader API/integration tests and remove demo credentials before any public deployment.
+- **JobPilot:** expand end-to-end and accessibility testing; offer an isolated public demo with synthetic data.
 
-These are engineering follow-ups, not claims of already delivered production capabilities.
+I don't equate a portfolio release with a production system that has measured traffic, operational SLAs, or independent security review.
 
 </details>
 
-## Technical toolkit
+## Technical foundations
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<b>Software engineering</b><br>
-TypeScript · JavaScript · React · Node.js · Express · HTML/CSS · REST APIs
-</td>
-<td width="50%" valign="top">
-<b>Cloud, data &amp; quality</b><br>
-Cloudflare Workers · D1 · R2 · Drizzle ORM · MySQL · Git · Vitest · ESLint
-</td>
-</tr>
-</table>
+| What I work with | Technologies and practices |
+|:--|:--|
+| **Web applications** | TypeScript, JavaScript, React, HTML/CSS |
+| **Backend & data** | Node.js, Express, REST APIs, MySQL, Cloudflare D1, Drizzle ORM |
+| **Cloud & storage** | Cloudflare Workers, private R2 object storage |
+| **Verification** | Git, GitHub, Vitest, TypeScript checks, ESLint, validation and authorization |
+| **IT operations** | Windows, Microsoft 365, network troubleshooting, service desk documentation |
 
-**IT operations:** Windows, Microsoft 365, networking fundamentals, issue triage, technical documentation and escalation.
+## Experience & education
 
-The technologies above reflect project work and professional exposure; depth varies. Source code and architectural explanations are linked so you can evaluate the work yourself.
+**IT Support Specialist — Atos**  
+First-line troubleshooting, issue triage, escalation and technical documentation.
 
-## Beyond the code
+**B.S. Information Technology — Technological University of the Philippines–Manila**  
+Information technology, software and systems education.
 
-**Atos — IT Support Specialist**  
-First-line technical support, troubleshooting, documentation and escalation.
+**Founder — AILEVATED**  
+Practical technology education, software projects, and AI learning resources.
 
-**Technological University of the Philippines–Manila — B.S. Information Technology**  
-Academic foundation in information technology, software and systems.
-
-**AILEVATED — Founder**  
-Technology education, practical AI workflows, original learning content and digital products.
+I'm pursuing software engineering opportunities where I can contribute to **backend services, cloud platforms, and reliable user-facing products**—and continue learning alongside experienced engineering teams.
 
 ---
 
@@ -188,17 +154,19 @@ Technology education, practical AI workflows, original learning content and digi
 
 <div align="center">
 
-**Interested in engineering work, collaboration, or a project discussion?**
+**Reviewing my work, considering me for an engineering role, or discussing a project?**
 
-[**View my portfolio**](https://portfolio.randyalonzo101.workers.dev) &nbsp;·&nbsp; [**Connect on LinkedIn**](https://www.linkedin.com/in/randy-m-alonzo/) &nbsp;·&nbsp; [**Email me**](mailto:randyalonzo101@gmail.com)
+[**Portfolio**](https://portfolio.randyalonzo101.workers.dev) &nbsp;·&nbsp; [**LinkedIn**](https://www.linkedin.com/in/randy-m-alonzo/) &nbsp;·&nbsp; [**Email**](mailto:randyalonzo101@gmail.com)
 
 </div>
 
-| Professional | Creator &amp; freelance work |
+| Professional | Additional work & community |
 |:--|:--|
 | [✉️ randyalonzo101@gmail.com](mailto:randyalonzo101@gmail.com) | [🎨 Fiverr — AILEVATED](https://www.fiverr.com/sellers/ailevated/) |
-| [🌐 Portfolio](https://portfolio.randyalonzo101.workers.dev) | [💼 Upwork profile](https://www.upwork.com/freelancers/~01e817b1de0c60f604?viewMode=1&mp_source=share) |
+| [🌐 Personal portfolio](https://portfolio.randyalonzo101.workers.dev) | [💼 Upwork](https://www.upwork.com/freelancers/~01e817b1de0c60f604?viewMode=1&mp_source=share) |
 | [💼 LinkedIn](https://www.linkedin.com/in/randy-m-alonzo/) | [☁️ AWS Builder badges](https://builder.aws.com/community/@ranbyruz?tab=badges) |
-| [🐙 GitHub repositories](https://github.com/ailevated-randy-alonzo) | [🚀 AILEVATED](https://ailevated.tech) · [▶️ YouTube](https://www.youtube.com/@ailevated) |
+| [🐙 GitHub](https://github.com/ailevated-randy-alonzo) | [🚀 AILEVATED](https://ailevated.tech) · [▶ YouTube](https://www.youtube.com/@ailevated) |
 
-<div align="center"><sub>Real projects. Clear decisions. An engineering practice that keeps improving.</sub></div>
+<div align="center">
+<sub>Software engineering is more than a demo: understand the boundary, document the tradeoff, and make the implementation inspectable.</sub>
+</div>

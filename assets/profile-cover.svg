@@ -1,34 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="398" viewBox="0 0 1440 398" role="img" aria-labelledby="ct cd">
-<title id="ct">Randy M. Alonzo — software engineering</title>
-<desc id="cd">Midnight navy editorial portfolio header, cyan highlights, and a small, legible server-side request-flow illustration</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="430" viewBox="0 0 1440 430" role="img" aria-labelledby="hTitle hDesc">
+<title id="hTitle">Randy M. Alonzo — engineering portfolio</title>
+<desc id="hDesc">Premium midnight navy editorial header with large name, full-stack and systems focus, and an annotated request lifecycle.</desc>
 <defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#091324"/><stop offset=".67" stop-color="#10233B"/><stop offset="1" stop-color="#091727"/></linearGradient>
- <linearGradient id="a" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#53D7FF"/><stop offset=".65" stop-color="#5FE2CB"/><stop offset="1" stop-color="#D2F1EC"/></linearGradient>
- <pattern id="g" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#B8D7E8" stroke-opacity=".065" stroke-width="1"/></pattern>
- <radialGradient id="gl"><stop stop-color="#188ED0" stop-opacity=".18"/><stop offset="1" stop-color="#188ED0" stop-opacity="0"/></radialGradient>
- <clipPath id="c"><rect width="1440" height="398" rx="16"/></clipPath>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081425"/><stop offset=".55" stop-color="#10233C"/><stop offset="1" stop-color="#09192B"/></linearGradient>
+<linearGradient id="top" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#64DCF9"/><stop offset=".6" stop-color="#5BDFCC"/><stop offset="1" stop-color="#E8AF78"/></linearGradient>
+<radialGradient id="halo" cx="50%" cy="50%" r="50%"><stop stop-color="#2289AD" stop-opacity=".21"/><stop offset="1" stop-color="#2289AD" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#B7D7EB" stroke-opacity=".06" stroke-width="1"/></pattern>
+<clipPath id="clip"><rect width="1440" height="430" rx="18"/></clipPath>
 </defs>
-<g clip-path="url(#c)">
- <rect width="1440" height="398" fill="url(#bg)"/><rect width="1440" height="398" fill="url(#g)"/>
- <circle cx="1170" cy="200" r="335" fill="url(#gl)"/>
- <rect width="1440" height="6" fill="url(#a)"/>
- <rect x="55" y="48" width="61" height="49" rx="9" fill="#123D51" stroke="#66D9EA" stroke-width="1.8"/>
- <text x="85" y="81" text-anchor="middle" fill="#DDFBFF" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="800">RM.</text>
- <text x="136" y="78" fill="#A1CBDC" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" letter-spacing="2.2">SOFTWARE ENGINEERING / PORTFOLIO</text>
- <text x="56" y="205" fill="#F8FCFF" font-family="Arial,Helvetica,sans-serif" font-size="93" font-weight="800" letter-spacing="-3.3">Randy M. Alonzo<tspan fill="#60DFDC">.</tspan></text>
- <text x="60" y="263" fill="#D6E9F4" font-family="Arial,Helvetica,sans-serif" font-size="31">Full-stack development · Backend · Cloud</text>
- <path d="M59 297H800" stroke="#8AACBE" stroke-opacity=".48" stroke-width="1.5"/>
- <text x="60" y="337" fill="#AAD0E3" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="600">Build for users. Verify at the boundaries.</text>
- <text x="60" y="375" fill="#7D9DB2" font-family="Arial,Helvetica,sans-serif" font-size="18" letter-spacing="1.8">MANILA, PHILIPPINES  /  FOUNDER, AILEVATED</text>
- <rect x="860" y="53" width="516" height="293" rx="14" fill="#101F33" stroke="#426C84" stroke-width="2"/>
- <rect x="861" y="54" width="514" height="51" rx="13" fill="#1A3047"/>
- <circle cx="894" cy="80" r="7" fill="#FB947B"/><circle cx="921" cy="80" r="7" fill="#FFD17B"/><circle cx="948" cy="80" r="7" fill="#6DDFBE"/>
- <text x="1113" y="87" text-anchor="middle" fill="#9DC2D4" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" letter-spacing="1.3">REQUEST / RESPONSE</text>
- <text x="891" y="155" fill="#73DFE1" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700">GET /api/jobs</text>
- <path d="M891 175H1345" stroke="#345771" stroke-width="2"/>
- <text x="891" y="214" fill="#BFE8F2" font-family="Arial,Helvetica,sans-serif" font-size="24"><tspan fill="#59DCBD">01</tspan>  identity + access checks</text>
- <text x="891" y="261" fill="#BFE8F2" font-family="Arial,Helvetica,sans-serif" font-size="24"><tspan fill="#59DCBD">02</tspan>  validate source + data</text>
- <text x="891" y="308" fill="#BFE8F2" font-family="Arial,Helvetica,sans-serif" font-size="24"><tspan fill="#59DCBD">03</tspan>  return explicit states</text>
- <text x="873" y="375" fill="#769EB5" font-family="Arial,Helvetica,sans-serif" font-size="20" letter-spacing="1">RELIABILITY  /  PRIVACY  /  CLARITY</text>
+<g clip-path="url(#clip)">
+<rect width="1440" height="430" fill="url(#bg)"/><rect width="1440" height="430" fill="url(#grid)"/><circle cx="1168" cy="185" r="310" fill="url(#halo)"/>
+<rect width="1440" height="6" fill="url(#top)"/>
+<rect x="59" y="53" width="58" height="51" rx="9" fill="#153F54" stroke="#66D5E8" stroke-width="2"/>
+<text x="88" y="88" text-anchor="middle" fill="#E2F9FF" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="800">RM.</text>
+<text x="142" y="86" fill="#A9CEE0" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" letter-spacing="2.5">ENGINEERING PORTFOLIO</text>
+<text x="59" y="204" fill="#F8FCFF" font-family="Arial,Helvetica,sans-serif" font-size="87" font-weight="800" letter-spacing="-2.8">Randy M. Alonzo<tspan fill="#62DACA">.</tspan></text>
+<text x="61" y="263" fill="#DDEAF5" font-family="Arial,Helvetica,sans-serif" font-size="30">Full-stack developer  /  Systems-minded problem solver</text>
+<path d="M60 300H822" stroke="#7D9FB6" stroke-opacity=".64" stroke-width="2"/>
+<text x="61" y="348" fill="#AAE7EB" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="600">Building for users. Designing for failure.</text>
+<text x="61" y="397" fill="#8FAFC2" font-family="Arial,Helvetica,sans-serif" font-size="19" letter-spacing="1.6">MANILA, PHILIPPINES  /  AILEVATED</text>
+<path d="M862 52V389" stroke="#7595AA" stroke-opacity=".5" stroke-width="2"/>
+<text x="897" y="83" fill="#6DE5CF" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" letter-spacing="2">A SYSTEM'S JOURNEY</text>
+<rect x="896" y="116" width="482" height="216" rx="14" fill="#10253B" stroke="#3D6C88" stroke-width="2"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="925" y="160" fill="#9CE0EE" font-size="22" font-weight="700">01</text>
+<text x="988" y="160" fill="#E9F7FF" font-size="22">request reaches API</text>
+<path d="M934 175V206" stroke="#62DBD1" stroke-width="3"/>
+<text x="925" y="229" fill="#9CE0EE" font-size="22" font-weight="700">02</text>
+<text x="988" y="229" fill="#E9F7FF" font-size="22">identity and data checked</text>
+<path d="M934 246V272" stroke="#62DBD1" stroke-width="3"/>
+<text x="925" y="297" fill="#9CE0EE" font-size="22" font-weight="700">03</text>
+<text x="988" y="297" fill="#E9F7FF" font-size="22">predictable response</text>
 </g>
-</svg>
+<text x="900" y="375" fill="#86A9BD" font-family="Arial,Helvetica,sans-serif" font-size="20" letter-spacing="1">SOFTWARE  /  SECURITY  /  RELIABILITY</text>
+</g></svg>

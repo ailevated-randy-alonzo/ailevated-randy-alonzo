@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="482" viewBox="0 0 1320 482" role="img" aria-labelledby="arch-title arch-desc">
+<title id="arch-title">Hyrvanta architecture overview</title>
+<desc id="arch-desc">Authenticated user requests flow from React to the Worker API, which reads and writes D1 records and private R2 résumé objects. External Greenhouse and Lever employer feeds enter through server-side synchronization, verification, and normalization into D1.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0B1B30"/><stop offset="1" stop-color="#0F263C"/></linearGradient><pattern id="gr" width="29" height="29" patternUnits="userSpaceOnUse"><path d="M29 0H0V29" fill="none" stroke="#9BB8D0" stroke-opacity=".08"/></pattern><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#5EC7E4"/></marker></defs>
+<rect width="1320" height="482" rx="14" fill="url(#bg)"/><rect width="1320" height="482" rx="14" fill="url(#gr)"/>
+<path d="M0 0H1320" stroke="#4DDBCE" stroke-width="6"/>
+<text x="45" y="57" fill="#EAF5FF" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700">Hyrvanta / application boundaries</text>
+<text x="45" y="88" fill="#8CB6CC" font-family="Arial,Helvetica,sans-serif" font-size="20">Simplified from the repository's current architecture documentation</text>
+<g stroke="#4E8CA7" stroke-width="2">
+ <rect x="45" y="128" width="249" height="124" rx="11" fill="#163650"/>
+ <rect x="384" y="128" width="299" height="124" rx="11" fill="#16465D" stroke="#54C9DF"/>
+ <rect x="790" y="111" width="245" height="104" rx="11" fill="#163650"/>
+ <rect x="790" y="238" width="245" height="104" rx="11" fill="#163650"/>
+ <rect x="45" y="305" width="249" height="100" rx="11" fill="#15334B"/>
+ <rect x="384" y="305" width="299" height="100" rx="11" fill="#16465D"/>
+</g>
+<g font-family="Arial,Helvetica,sans-serif" font-weight="700">
+ <text x="67" y="163" fill="#58D8F0" font-size="18" letter-spacing="1.4">USER INTERFACE</text>
+ <text x="67" y="204" fill="#F3FBFF" font-size="27">React + Vinext</text>
+ <text x="405" y="163" fill="#82F1DE" font-size="18" letter-spacing="1.4">AUTHENTICATED ROUTES</text>
+ <text x="405" y="204" fill="#F3FBFF" font-size="27">Worker / API</text>
+ <text x="405" y="233" fill="#C6E5EE" font-size="17">Server-side owner checks</text>
+ <text x="814" y="144" fill="#58D8F0" font-size="17" letter-spacing="1.3">STRUCTURED DATA</text>
+ <text x="814" y="182" fill="#F3FBFF" font-size="28">Cloudflare D1</text>
+ <text x="814" y="269" fill="#58D8F0" font-size="17" letter-spacing="1.3">PRIVATE OBJECTS</text>
+ <text x="814" y="307" fill="#F3FBFF" font-size="28">Cloudflare R2</text>
+ <text x="67" y="341" fill="#58D8F0" font-size="18" letter-spacing="1.2">EXTERNAL SOURCES</text>
+ <text x="67" y="381" fill="#F3FBFF" font-size="24">Greenhouse / Lever</text>
+ <text x="405" y="341" fill="#82F1DE" font-size="18" letter-spacing="1.2">SERVER-SIDE INGEST</text>
+ <text x="405" y="379" fill="#F3FBFF" font-size="25">Validate + normalize</text>
+</g>
+<g fill="none" stroke="#5EC7E4" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrow)">
+ <path d="M296 190H377"/>
+ <path d="M686 172H775"/>
+ <path d="M685 218H718V290H775"/>
+ <path d="M296 355H377"/>
+ <path d="M687 352H733V189H775"/>
+</g>
+<g font-family="Arial,Helvetica,sans-serif" fill="#A4C5DB" font-size="17">
+ <text x="314" y="180">request</text>
+ <text x="696" y="157">read/write</text>
+ <text x="694" y="280">files</text>
+</g>
+<rect x="1076" y="116" width="202" height="230" rx="12" fill="#102F3F" stroke="#3B827F" stroke-width="2"/>
+<text x="1102" y="151" font-family="Arial,Helvetica,sans-serif" fill="#79E7CF" font-size="17" font-weight="700" letter-spacing="1">DESIGN RULES</text>
+<g font-family="Arial,Helvetica,sans-serif" fill="#F1FBFE" font-size="20">
+ <text x="1102" y="199">Auth on server</text>
+ <text x="1102" y="247">Private résumés</text>
+ <text x="1102" y="295">Traceable sources</text>
+</g>
+<g fill="#4FDCC1"><circle cx="1090" cy="190" r="4"/><circle cx="1090" cy="238" r="4"/><circle cx="1090" cy="286" r="4"/></g>
+<path d="M45 429H1276" stroke="#607F9B" stroke-opacity=".6"/>
+<text x="45" y="458" font-family="Arial,Helvetica,sans-serif" fill="#A7C4D6" font-size="18">This is a portfolio-scale architecture; production integrations require configuration.</text>
+</svg>

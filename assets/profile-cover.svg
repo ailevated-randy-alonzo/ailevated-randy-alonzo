@@ -1,36 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="395" viewBox="0 0 1400 395" role="img" aria-labelledby="t d">
-<title id="t">Randy M. Alonzo — engineering portfolio</title>
-<desc id="d">Navy editorial GitHub banner with a cyan accent and an index of four real software projects</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="445" viewBox="0 0 1500 445" role="img" aria-labelledby="title desc">
+<title id="title">Randy M. Alonzo — software engineering portfolio</title>
+<desc id="desc">Premium midnight-navy GitHub banner with large typography and a software-system schematic, representing full-stack development, backend, and cloud engineering.</desc>
 <defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0A1224"/><stop offset=".63" stop-color="#111E35"/><stop offset="1" stop-color="#0B162B"/></linearGradient>
- <linearGradient id="st" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#34C2EF"/><stop offset="1" stop-color="#57E1BE"/></linearGradient>
- <radialGradient id="orb" cx="50%" cy="50%" r="50%"><stop stop-color="#2777B4" stop-opacity=".22"/><stop offset="1" stop-color="#2777B4" stop-opacity="0"/></radialGradient>
- <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#7FA5C7" stroke-width="1" stroke-opacity=".07"/></pattern>
- <clipPath id="clip"><rect x="0" y="0" width="1400" height="395" rx="15"/></clipPath>
+ <linearGradient id="b" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#091225"/><stop offset=".6" stop-color="#10233C"/><stop offset="1" stop-color="#071526"/></linearGradient>
+ <linearGradient id="a" x1="0" x2="1" y1="0" y2="0"><stop stop-color="#57D9FF"/><stop offset=".55" stop-color="#35B8EC"/><stop offset="1" stop-color="#52E8C8"/></linearGradient>
+ <radialGradient id="gl" cx="68%" cy="38%" r="65%"><stop stop-color="#236AA3" stop-opacity=".22"/><stop offset="1" stop-color="#236AA3" stop-opacity="0"/></radialGradient>
+ <pattern id="g" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" fill="none" stroke="#B6D0E8" stroke-opacity=".06" stroke-width="1"/></pattern>
+ <clipPath id="c"><rect width="1500" height="445" rx="16"/></clipPath>
 </defs>
-<g clip-path="url(#clip)">
- <rect width="1400" height="395" fill="url(#bg)"/>
- <rect width="1400" height="395" fill="url(#grid)"/>
- <circle cx="1270" cy="180" r="320" fill="url(#orb)"/>
- <rect width="1400" height="5" fill="url(#st)"/>
- <path d="M43 63H77" stroke="#55DCC4" stroke-width="4" stroke-linecap="square"/>
- <text x="94" y="70" fill="#A5BFD6" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" letter-spacing="3">ENGINEERING / PROFILE</text>
- <text x="850" y="70" fill="#6585A4" font-family="Arial,Helvetica,sans-serif" font-size="16" text-anchor="end" letter-spacing="1">ailevated-randy-alonzo</text>
- <text x="42" y="184" fill="#F7FBFF" font-family="Arial,Helvetica,sans-serif" font-size="79" font-weight="800" letter-spacing="-3">Randy M. Alonzo<tspan fill="#4ACFED">.</tspan></text>
- <text x="45" y="239" fill="#D6E5F2" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="500">Full-stack development <tspan fill="#6C8BAA">/</tspan> Backend systems <tspan fill="#6C8BAA">/</tspan> Cloud</text>
- <path d="M44 266H853" stroke="#6D8AA8" stroke-opacity=".5" stroke-width="1"/>
- <text x="44" y="303" fill="#8EABC6" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" letter-spacing="1">DEVELOPER  +  IT SUPPORT SPECIALIST</text>
- <text x="44" y="358" fill="#748FAB" font-family="Arial,Helvetica,sans-serif" font-size="17" letter-spacing="2">MANILA, PHILIPPINES  /  AILEVATED</text>
- <path d="M898 47V352" stroke="#5B7796" stroke-opacity=".55" stroke-width="1"/>
- <text x="936" y="70" fill="#5FE3CC" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" letter-spacing="2.1">SELECTED PROJECTS</text>
- <g font-family="Arial,Helvetica,sans-serif" font-size="23">
- <text x="936" y="126" fill="#4CD0EA" font-weight="700">01</text><text x="996" y="126" fill="#DCEAF6" font-weight="600">Hyrvanta</text>
- <text x="936" y="178" fill="#4CD0EA" font-weight="700">02</text><text x="996" y="178" fill="#DCEAF6" font-weight="600">Nearby Nook</text>
- <text x="936" y="230" fill="#4CD0EA" font-weight="700">03</text><text x="996" y="230" fill="#DCEAF6" font-weight="600">Storefront Admin</text>
- <text x="936" y="282" fill="#4CD0EA" font-weight="700">04</text><text x="996" y="282" fill="#DCEAF6" font-weight="600">JobPilot</text>
+<g clip-path="url(#c)">
+ <rect width="1500" height="445" fill="url(#b)"/><rect width="1500" height="445" fill="url(#g)"/><rect width="1500" height="445" fill="url(#gl)"/>
+ <rect x="0" y="0" width="1500" height="5" fill="url(#a)"/>
+ <path d="M60 77h36" stroke="#51DCCF" stroke-width="5" stroke-linecap="square"/>
+ <text x="111" y="83" fill="#A4C1D8" font-size="20" font-weight="700" letter-spacing="2.8" font-family="Arial,Helvetica,sans-serif">SOFTWARE ENGINEERING  /  SELECTED WORK</text>
+ <text x="62" y="189" fill="#F6FAFF" font-size="86" font-weight="800" letter-spacing="-3" font-family="Arial,Helvetica,sans-serif">Randy M. Alonzo<tspan fill="#49D5EF">.</tspan></text>
+ <text x="64" y="245" fill="#E1EBF6" font-size="31" font-weight="500" font-family="Arial,Helvetica,sans-serif">From user problems to engineered solutions.</text>
+ <path d="M64 280H877" stroke="#6E8BA8" stroke-opacity=".52" stroke-width="1.5"/>
+ <g font-family="Arial,Helvetica,sans-serif" font-size="19" letter-spacing=".4" font-weight="700">
+  <rect x="63" y="305" width="189" height="44" rx="7" fill="#163B56" stroke="#286487"/>
+  <text x="85" y="334" fill="#DDF5FD">FULL-STACK</text>
+  <rect x="267" y="305" width="208" height="44" rx="7" fill="#163B56" stroke="#286487"/>
+  <text x="286" y="334" fill="#DDF5FD">BACKEND / APIs</text>
+  <rect x="490" y="305" width="221" height="44" rx="7" fill="#16433E" stroke="#2A7E7B"/>
+  <text x="512" y="334" fill="#C9FEF0">CLOUD SYSTEMS</text>
  </g>
- <g fill="#2EDCC0"><rect x="1325" y="107" width="9" height="9" rx="2"/><rect x="1325" y="159" width="9" height="9" rx="2"/><rect x="1325" y="211" width="9" height="9" rx="2"/><rect x="1325" y="263" width="9" height="9" rx="2"/></g>
- <path d="M936 316H1335" stroke="#6886A3" stroke-opacity=".48"/>
- <text x="936" y="347" fill="#738EAA" font-family="Arial,Helvetica,sans-serif" font-size="15" letter-spacing="1.6">CODE  /  DECISIONS  /  DOCUMENTATION</text>
+ <text x="65" y="401" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#95ACC3" letter-spacing="2.2">MANILA, PHILIPPINES  <tspan fill="#4EB5C7">/</tspan>  AILEVATED</text>
+ <path d="M922 58V396" stroke="#65849E" stroke-opacity=".55" stroke-width="1.5"/>
+ <text x="958" y="84" font-family="Arial,Helvetica,sans-serif" fill="#6BDDCB" font-size="19" font-weight="700" letter-spacing="2.5">ENGINEERING SURFACE</text>
+ <g fill="none" stroke="#54BEDC" stroke-width="3" stroke-linecap="round"><path d="M1050 202H1084"/><path d="M1204 202H1237"/><path d="M1189 242V293"/></g>
+ <g font-family="Arial,Helvetica,sans-serif" text-anchor="middle">
+  <rect x="953" y="157" width="137" height="91" rx="11" fill="#173953" stroke="#4A91B5" stroke-width="2"/>
+  <text x="1022" y="194" fill="#7DDDF5" font-size="19" font-weight="700">CLIENT</text><text x="1022" y="222" fill="#F0FBFF" font-size="22" font-weight="700">React</text>
+  <rect x="1097" y="157" width="120" height="91" rx="11" fill="#12516A" stroke="#58D8F1" stroke-width="2"/>
+  <text x="1157" y="194" fill="#A0F4F7" font-size="19" font-weight="700">API</text><text x="1157" y="222" fill="#FFFFFF" font-size="22" font-weight="700">Worker</text>
+  <rect x="1244" y="157" width="207" height="91" rx="11" fill="#193B52" stroke="#4A91B5" stroke-width="2"/>
+  <text x="1348" y="194" fill="#7DDDF5" font-size="19" font-weight="700">DATA</text><text x="1348" y="222" fill="#F0FBFF" font-size="22" font-weight="700">D1 / R2</text>
+ </g>
+ <path d="M1160 255V293H1348V255" fill="none" stroke="#56B8BE" stroke-opacity=".5" stroke-width="1.7" stroke-dasharray="5 8"/>
+ <rect x="1038" y="295" width="299" height="53" rx="10" fill="#102D41" stroke="#387A8C"/>
+ <text x="1188" y="329" font-family="Arial,Helvetica,sans-serif" text-anchor="middle" font-size="22" font-weight="700" fill="#A6EDDD">BUILD  ·  VERIFY  ·  IMPROVE</text>
+ <path d="M955 369H1449" stroke="#70899E" stroke-opacity=".45"/>
+ <text x="955" y="399" font-family="Arial,Helvetica,sans-serif" font-size="17" letter-spacing="1.8" fill="#80A0BB">PRODUCT  /  SYSTEMS  /  RELIABILITY</text>
 </g>
 </svg>
